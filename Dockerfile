@@ -13,4 +13,4 @@ RUN apk --no-cache add python py-pip && \
 COPY entrypoint.sh /
 ENTRYPOINT ["/entrypoint.sh"]
 
-CMD ["speedtest-cli"]
+CMD ["sslyze"]
