@@ -5,8 +5,8 @@ MAINTAINER Jan Wagner "waja@cyconet.org"
 
 ENV SSLYZE_CLI_VERSION 1.1.1
 
-RUN apk --no-cache add python py-pip && \
- apk --no-cache add --virtual build-dependencies python-dev build-base wget && \
+RUN apk --no-cache add python py-pip openssl && \
+ apk --no-cache add --virtual build-dependencies python-dev libffi-dev openssl-dev build-base wget && \
  pip install sslyze==$SSLYZE_CLI_VERSION && \
  apk del build-dependencies
 
