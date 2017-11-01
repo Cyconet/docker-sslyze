@@ -1,3 +1,12 @@
+# Docker-SSLyze
+
+[![Build Status](https://travis-ci.org/Cyconet/docker-sslyze.svg?branch=development)](https://travis-ci.org/Cyconet/docker-sslyze)
+[![Docker Build Status](https://img.shields.io/docker/build/waja/sslyze.svg)](https://hub.docker.com/r/waja/sslyze/)
+[![GitHub tag](https://img.shields.io/github/tag/Cyconet/docker-sslyze.svg)](https://github.com/Cyconet/docker-sslyze/tags)
+[![](https://img.shields.io/docker/pulls/waja/sslyze.svg)](https://hub.docker.com/r/waja/sslyze/)
+[![](https://img.shields.io/docker/stars/waja/sslyze.svg)](https://hub.docker.com/r/waja/sslyze/)
+[![](https://img.shields.io/docker/automated/waja/sslyze.svg)](https://hub.docker.com/r/waja/sslyze/)
+
 Builds a docker image with the [sslyze](https://github.com/nabla-c0d3/sslyze) ready to run.
 
 Running
