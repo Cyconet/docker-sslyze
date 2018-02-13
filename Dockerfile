@@ -3,7 +3,7 @@ FROM alpine:3.7
 # Dockerfile Maintainer
 MAINTAINER Jan Wagner "waja@cyconet.org"
 
-ENV SSLYZE_CLI_VERSION 1.1.4
+ENV SSLYZE_CLI_VERSION 1.3.4
 
 RUN apk --no-cache add python3 openssl && \
  apk --no-cache add --virtual build-dependencies python3-dev libffi-dev openssl-dev build-base wget && \
