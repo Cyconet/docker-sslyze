@@ -1,5 +1,7 @@
 # Docker-SSLyze
 
+[![](https://images.microbadger.com/badges/version/waja/sslyze.svg)](https://hub.docker.com/r/waja/sslyze/)
+[![](https://images.microbadger.com/badges/image/waja/sslyze.svg)](https://hub.docker.com/r/waja/sslyze/)
 [![Build Status](https://travis-ci.org/Cyconet/docker-sslyze.svg?branch=development)](https://travis-ci.org/Cyconet/docker-sslyze)
 [![Docker Build Status](https://img.shields.io/docker/build/waja/sslyze.svg)](https://hub.docker.com/r/waja/sslyze/)
 [![GitHub tag](https://img.shields.io/github/tag/Cyconet/docker-sslyze.svg)](https://github.com/Cyconet/docker-sslyze/tags)
