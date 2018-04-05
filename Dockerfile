@@ -1,4 +1,4 @@
-FROM alpine:3.7
+FROM python
                                                                                 
 # Dockerfile Maintainer
 MAINTAINER Jan Wagner "waja@cyconet.org"
@@ -22,11 +22,13 @@ LABEL org.label-schema.name="sslyze - fast and powerful SSL/TLS server scanner" 
 
 ENV SSLYZE_CLI_VERSION 1.4.1
 
-RUN apk --no-cache update && apk --no-cache upgrade && \
- apk --no-cache add python3 openssl && \
- apk --no-cache add --virtual build-dependencies python3-dev libffi-dev openssl-dev build-base wget && \
- pip3 install sslyze==$SSLYZE_CLI_VERSION && \
- apk del build-dependencies
+#RUN apk --no-cache update && apk --no-cache upgrade && \
+# apk --no-cache add python3 libressl && \
+# apk --no-cache add --virtual build-dependencies python3-dev libffi-dev libressl-dev build-base wget && \
+RUN pip install --upgrade pip setuptools && \
+ pip install --upgrade sslyze==$SSLYZE_CLI_VERSION && \
+ rm -f /bin/sh && ln -s /bin/bash /bin/sh
+# apk del build-dependencies
 
 COPY entrypoint.sh /
 ENTRYPOINT ["/entrypoint.sh"]
