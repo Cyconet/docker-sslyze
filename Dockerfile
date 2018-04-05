@@ -23,9 +23,9 @@ LABEL org.label-schema.name="sslyze - fast and powerful SSL/TLS server scanner" 
 ENV SSLYZE_CLI_VERSION 1.1.5
 
 RUN apk --no-cache update && apk --no-cache upgrade && \
- apk --no-cache add python py-pip openssl && \
- apk --no-cache add --virtual build-dependencies python-dev libffi-dev openssl-dev build-base wget && \
- pip install sslyze==$SSLYZE_CLI_VERSION && \
+ apk --no-cache add python3 openssl && \
+ apk --no-cache add --virtual build-dependencies python3-dev libffi-dev openssl-dev build-base wget && \
+ pip3 install sslyze==$SSLYZE_CLI_VERSION && \
  apk del build-dependencies
 
 COPY entrypoint.sh /
