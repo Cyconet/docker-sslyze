@@ -20,7 +20,7 @@ LABEL org.label-schema.name="sslyze - fast and powerful SSL/TLS server scanner" 
     org.label-schema.vcs-ref=$VCS_REF \
     org.label-schema.vcs-branch=$VCS_BRANCH
 
-ENV SSLYZE_CLI_VERSION 1.1.5
+ENV SSLYZE_CLI_VERSION 1.4.1
 
 RUN apk --no-cache update && apk --no-cache upgrade && \
  apk --no-cache add python3 openssl && \
