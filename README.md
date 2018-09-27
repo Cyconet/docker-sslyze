@@ -11,6 +11,12 @@
 
 Builds a docker image with the [sslyze](https://github.com/nabla-c0d3/sslyze) ready to run.
 
+
+New official Docker image
+-------------------------
+
+Please use the official docker image as documented at https://github.com/nabla-c0d3/sslyze#docker!
+
 Running
 -------
 
